@@ -381,6 +381,14 @@ class My_News_Plugin_Admin
 				'type' => 'text',
 				'supplemental' => 'Integer',
 				'default' => "86400"
+			),
+			array(
+				'uid' => 'my_news_plugin_news_per_page',
+				'label' => 'Number of news per page',
+				'section' => 'settings',
+				'type' => 'text',
+				'supplemental' => 'Integer',
+				'default' => "10"
 			)
 		);
 		// Lets go through each field in the array and set it up

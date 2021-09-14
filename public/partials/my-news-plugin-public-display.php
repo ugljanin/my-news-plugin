@@ -1,7 +1,7 @@
 <?php
 get_header();
 global $paged;
-$posts_per_page = 6;
+$posts_per_page = get_option('my_news_plugin_news_per_page', 1);
 
 if (isset($_GET['sort'])) {
     $sort = $_GET['sort'];

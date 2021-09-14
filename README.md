@@ -10,3 +10,5 @@ Use shortcode [news-list] to display all news.
 Use defined endpoint to access all news.
 
 Change cron interval for more frequent news fetching.
+
+Change number of news per page that will be used in schortcode and on endpoint.

@@ -61,10 +61,7 @@ class My_News_Plugin_Public
 
 	function my_news_plugin_create_shortcode()
 	{
-
-		global $paged;
-		$posts_per_page = 6;
-
+		$posts_per_page = get_option('my_news_plugin_news_per_page', 1);
 		if (isset($_GET['sort'])) {
 			$sort = $_GET['sort'];
 		} else
