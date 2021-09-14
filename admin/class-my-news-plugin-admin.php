@@ -519,6 +519,7 @@ class My_News_Plugin_Admin
 				$url_slug = get_option('my_news_plugin_endpoint', 'my-news-plugin');
 				// Lets setup our rewrite rules
 				add_rewrite_rule($url_slug . '/?$', 'index.php?my_news_plugin=index', 'top');
+				add_rewrite_rule($url_slug . '/page/([0-9]{1,})/?$', 'index.php?my_news_plugin=index&paged=$matches[1]', 'top');
 
 				// Lets flush rewrite rules on activation
 				flush_rewrite_rules();

@@ -6,3 +6,7 @@ After cloning the plugin to wp-content/plugins directory and activating the plug
 By clicking on "My News Plugin", plugin settings will be displayed where user can configure plugin endpoint, search string to be contained in the fetched news, news API and cron interval for news fetching in seconds.
 
 Use shortcode [news-list] to display all news.
+
+Use defined endpoint to access all news.
+
+Change cron interval for more frequent news fetching.
